@@ -1,7 +1,7 @@
-# docker-riak
+# docker-storm
 
 This is a [Docker](http://docker.io) project to bring up a local
-[Riak](https://github.com/basho/riak) cluster. In addition, the
+[storm](https://github.com/nathanmarz/storm) cluster. In addition, the
 [Pipework](https://github.com/jpetazzo/pipework) project is used to connect
 containers to each other.
 
@@ -27,7 +27,7 @@ $ vagrant ssh
 Once you're on a Ubuntu machine, install the following dependencies:
 
 ```bash
-$ sudo apt-get install -y git curl make sshpass
+$ sudo apt-get install -y git make 
 ```
 
 ## Running
@@ -35,10 +35,10 @@ $ sudo apt-get install -y git curl make sshpass
 ### Clone repository
 
 ```bash
-$ git clone https://github.com/hectcastro/docker-riak.git
-$ cd docker-riak
+$ git clone https://github.com/deinspanjer/docker-storm.git
+$ cd docker-storm
 $ make
-$ make riak-container
+$ make storm-container
 ```
 
 ### Launch cluster
